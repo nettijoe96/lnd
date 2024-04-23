@@ -4843,6 +4843,16 @@
         "peer_alias_lookup": {
           "type": "boolean",
           "description": "Informs the server if the peer alias should be looked up for each\nforwarding event."
+        },
+        "IncomingChannelID": {
+          "type": "integer",
+          "format": "int64",
+          "description": "Incoming channel ID of the forwarding history request."
+        },
+        "OutgoingChannelID": {
+          "type": "integer",
+          "format": "int64",
+          "description": "Outgoing channel ID of the forwarding history request."
         }
       }
     },

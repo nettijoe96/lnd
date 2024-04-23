@@ -4446,6 +4446,12 @@ message ForwardingHistoryRequest {
     // Informs the server if the peer alias should be looked up for each
     // forwarding event.
     bool peer_alias_lookup = 5;
+
+    // Incoming channel ID of the forwarding history request.
+    uint32 IncomingChannelID = 6;
+
+    // Outgoing channel ID of the forwarding history request.
+    uint32 OutgoingChannelID = 7;
 }
 message ForwardingEvent {
     // Timestamp is the time (unix epoch offset) that this circuit was
